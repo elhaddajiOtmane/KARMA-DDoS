@@ -1,0 +1,15 @@
+{
+    "name": "Python and Chrome Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "..",
+        "args": {
+            "VARIANT": "3.9"
+        }
+    },
+    "settings": {},
+    "extensions": ["ms-python.python"],
+    "forwardPorts": [],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode"
+}
